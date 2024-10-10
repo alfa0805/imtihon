@@ -1,0 +1,193 @@
+.section {
+  .container {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+    width: 50%;
+    height: 525px;
+    position: relative;
+    &-img {
+      width: 350px;
+      height: 425px;
+    }
+    &-pic {
+      width: 255px;
+      height: 255px;
+      position: absolute;
+      bottom: 0px;
+      left: 175px;
+    }
+  }
+  &__right {
+    width: 50%;
+    &-text {
+      font-family: Stem;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      color: $blue;
+    }
+    &-title {
+      padding: 16px 0px;
+      font-family: Stem;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 52px;
+      text-align: left;
+      color: $blak;
+    }
+    &-subtext {
+      padding: 20px 0px;
+      font-family: Stem;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      color: $blakc;
+    }
+    &-number {
+      padding-bottom: 32px;
+      font-family: Stem;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      color: $blakc;
+    }
+    &-btn {
+      font-family: Stem;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      color: $ffff;
+      background-color: $blue;
+      padding: 8px 16px;
+      border: 1px solid $blakc;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width:916px){
+    .section{
+        &__left{
+            width: 60%;
+        }
+        &__right{
+            width:40%;
+            &-title{
+                font-size:4.8vw;
+                line-height:5vw;
+            }
+        }
+    }
+}
+@media screen and (max-width:790px){
+    .section{
+        &__left{
+            width: 65%;
+            &-pic{
+                left:120px;
+            }
+        }
+        &__right{
+            width:35%;
+           &-text{
+            font-size:1.8vw;
+            line-height:2.2vw;
+           }
+           &-subtext{
+            font-size:1.8vw;
+            line-height:2.2vw;
+           }
+           &-number{
+            font-size:1.8vw;
+            line-height:2.2vw;
+           }
+        }
+    }
+}
+@media screen and (max-width:630px){
+    .section{
+        .container{
+            flex-direction: column;
+        }
+        &__left{
+            width:100%;
+            &-pic{
+                left:120px;
+            }
+        }
+        &__right{
+            padding-top:40px;
+            width:80%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            &-title{
+                font-size:5.5vw;
+                text-align:center;
+            }
+           &-text{
+            font-size:2.5vw;
+            line-height:2.6vw;
+            text-align:center;
+           }
+           &-subtext{
+            font-size:2.5vw;
+            line-height:2.6vw;
+            text-align:center;
+           }
+           &-number{
+            font-size:2.5vw;
+            line-height:2.6vw;
+            text-align:center;
+           }
+           &-btn{
+            font-size:2.5vw;
+           }
+        }
+    }
+}
+@media screen and (max-width:414px){
+    .section{
+        &__left{
+            height:430px;
+            &-img{
+                width:290px;
+                height:380px;
+            }
+            &-pic{
+                width:200px;
+                height:200px;
+                left:90px;
+            }
+        }
+        &__right{
+            width:90%;
+           &-text{
+            font-size:4vw;
+            line-height:4vw;
+           }
+           &-title{
+            font-size:7vw;
+           }
+           &-subtext{
+            font-size:4vw;
+            line-height:4vw;
+           }
+           &-number{
+            font-size:4vw;
+            line-height:4vw;
+           }
+           &-btn{
+            font-size:4vw;
+           }
+        }
+    }
+}
